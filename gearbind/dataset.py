@@ -325,19 +325,14 @@ class HER2(SKEMPI):
         pdb_splits = [os.path.basename(os.path.dirname(pdb_file)) for pdb_file in self.pdb_files]
         self.num_samples = [pdb_splits.count(split) for split in self.splits]
 
-    def split(self, test_set="1n8z_renum.pdb_HL_C"):
+    def split(self, **kwargs):
         indices = list(range(len(self)))
-        test_indices = []
-        offset = 0
-        for split, num_samples in zip(self.splits, self.num_samples):
-            if split == test_set:
-                test_indices += indices[offset: offset + num_samples]
-            offset += num_samples
+        subset = torch_data.Subset(self, indices)
 
         return [
-            torch_data.Subset(self, test_indices),
-            torch_data.Subset(self, test_indices),
-            torch_data.Subset(self, test_indices)
+            subset,
+            subset,
+            subset
         ]
 
 
