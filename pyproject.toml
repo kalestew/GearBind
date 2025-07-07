@@ -1,0 +1,54 @@
+[project]
+name = "gearbind"
+version = "0.1.0"
+description = "GearBind: Pretrainable geometric graph neural network for protein-protein binding affinity prediction"
+requires-python = ">=3.8,<3.10"
+dependencies = [
+    "torch>=1.8.0,<2.0.0",
+    "torchdrug>=0.1.3",
+    "pandas>=1.3.0",
+    "numpy>=1.19.0",
+    "pyyaml>=5.4.0",
+    "easydict>=1.9",
+    "biopython>=1.79",
+    "rdkit>=2022.03.1",
+    "gdown>=4.4.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "jupyter>=1.0.0",
+    "ipykernel>=6.0.0",
+    "black>=22.0.0",
+    "pylint>=2.14.0",
+    "pytest>=7.0.0",
+]
+
+[project.scripts]
+gearbind-mutants = "script.generate_mutants_foldx:main"
+gearbind-predict = "script.predict_gearbind:main"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 120
+target-version = ['py38', 'py39']
+
+[tool.pylint]
+max-line-length = 120
+disable = ["C0103", "C0114", "C0115", "C0116", "R0913", "R0914", "W0212"]
+
+# UV-specific configuration
+[tool.uv]
+dev-dependencies = [
+    "jupyter>=1.0.0",
+    "ipykernel>=6.0.0",
+    "black>=22.0.0",
+    "pylint>=2.14.0",
+    "pytest>=7.0.0",
+]
+
+# Note: PyTorch Geometric requires special installation
+# Use the install_with_uv.sh script for proper CUDA-enabled installation 

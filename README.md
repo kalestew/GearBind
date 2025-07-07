@@ -12,6 +12,13 @@ This codebase is based on PyTorch and [TorchDrug]. It supports training and infe
 
 [TorchDrug]: https://github.com/DeepGraphLearning/torchdrug
 
+## FoldX Requirement
+
+For mutant structure generation, GearBind requires FoldX:
+1. Download FoldX from https://foldxsuite.crg.eu/ (academic license required)
+2. Place the binary in `./foldx/foldx_51binaryMac` (or update the path in scripts)
+3. See `foldx/README.md` for detailed instructions
+
 ## Installation
 
 You may install the dependencies via either conda or pip. Generally, GearBind works

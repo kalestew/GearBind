@@ -82,7 +82,7 @@ def ensure_dataset_class():
 
         def __init__(self, path: str, transform=None, **kwargs):  # noqa: D401
             super().__init__()
-            import pandas as pd  # Local import to avoid mandatory dependency for CLI
+            import pandas as pd  # type: ignore  # Local import to avoid mandatory dependency for CLI
             self.csv = pd.read_csv(path)
             self.transform = transform
             self.proteins = []

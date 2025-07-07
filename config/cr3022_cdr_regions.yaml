@@ -1,0 +1,10 @@
+# CR3022 CDR regions for saturation mutagenesis
+# Based on the GearBind paper specifications
+H:  # Heavy chain CDRs
+  - [26, 35]    # CDR-H1
+  - [50, 66]    # CDR-H2  
+  - [99, 108]   # CDR-H3
+L:  # Light chain CDRs
+  - [24, 40]    # CDR-L1
+  - [56, 62]    # CDR-L2
+  - [95, 103]   # CDR-L3 

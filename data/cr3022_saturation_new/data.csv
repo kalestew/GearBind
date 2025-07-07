@@ -1,0 +1,17 @@
+pdb_id,mutation,chain_a,chain_b,wt_protein,mt_protein
+6xc3_wt,GH26A,HL,C,6xc3_wt_repaired.pdb,mutants/GH26A.pdb
+6xc3_wt,GH26N,HL,C,6xc3_wt_repaired.pdb,mutants/GH26N.pdb
+6xc3_wt,GH26D,HL,C,6xc3_wt_repaired.pdb,mutants/GH26D.pdb
+6xc3_wt,GH35P,HL,C,6xc3_wt_repaired.pdb,mutants/GH35P.pdb
+6xc3_wt,GH35T,HL,C,6xc3_wt_repaired.pdb,mutants/GH35T.pdb
+6xc3_wt,GH35W,HL,C,6xc3_wt_repaired.pdb,mutants/GH35W.pdb
+6xc3_wt,IH50E,HL,C,6xc3_wt_repaired.pdb,mutants/IH50E.pdb
+6xc3_wt,IH50L,HL,C,6xc3_wt_repaired.pdb,mutants/IH50L.pdb
+6xc3_wt,IH50M,HL,C,6xc3_wt_repaired.pdb,mutants/IH50M.pdb
+6xc3_wt,QH66R,HL,C,6xc3_wt_repaired.pdb,mutants/QH66R.pdb
+6xc3_wt,QH66N,HL,C,6xc3_wt_repaired.pdb,mutants/QH66N.pdb
+6xc3_wt,QH66E,HL,C,6xc3_wt_repaired.pdb,mutants/QH66E.pdb
+6xc3_wt,SH99V,HL,C,6xc3_wt_repaired.pdb,mutants/SH99V.pdb
+6xc3_wt,KL24H,HL,C,6xc3_wt_repaired.pdb,mutants/KL24H.pdb
+6xc3_wt,PL40L,HL,C,6xc3_wt_repaired.pdb,mutants/PL40L.pdb
+6xc3_wt,SL56L,HL,C,6xc3_wt_repaired.pdb,mutants/SL56L.pdb

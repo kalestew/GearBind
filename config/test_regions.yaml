@@ -1,0 +1,5 @@
+# Test regions - just 2 positions to verify the script works
+H:  # Heavy chain test
+  - [26, 27]    # Just 2 positions
+L:  # Light chain test
+  - [24, 25]    # Just 2 positions 
